@@ -1,13 +1,26 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# Rgram
+# Rgram Overview
 
 <!-- badges: start -->
 
 <!-- badges: end -->
 
-The goal of Rgram is to …
+Images form a significant part of the data in today's world. Whether you want to enhance your poorly-lit profile picture or analyze satellite images, filters are your best friends. In scientific image processing, at most times, the images cannot be used directly and need to be processed to extract information from them. PyGram aims to make the image processing task easy and intuitive. With PyGram, users can rotate the image, convert it to greyscale, flip it in either a horizontal or vertical direction, and add padding to it (frame).
+
+## R ecosystem (To do)
+
+
+## Functions
+
+- `flipping`: This function can be used to flip the image either in the horizontal or vertical direction.
+
+- `greyscale`: The greyscale function converts a color image into a greyscale image.  
+
+- `padding`: This function can be used to add padding to the the borders of an image. 
+
+- `rotate`: The rotate function rotates an image by the specified number of degrees. 
 
 ## Installation
 
