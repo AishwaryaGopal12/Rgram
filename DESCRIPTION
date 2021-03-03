@@ -4,9 +4,23 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Rui",
            family = "Wang",
-           role = c("aut", "cre"),
-           email = "rwang778@gmail.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           role = c("aut", "cre")
+          )
+    person(given = "Mo",
+           family = "Garoub",
+           role = c("aut", "cre")
+          )       
+           
+    person(given = "Aishwarya",
+           family = "Gopal",
+           role = c("aut", "cre")
+           )
+    person(given = "Joshua",
+           family = "Lim",
+           role = c("aut", "cre")
+          ) 
+           
+           
 Description: A simple R package that provides functions to rotate, flip, pad, and change image to grayscale.
 License: MIT + file LICENSE
 Encoding: UTF-8
