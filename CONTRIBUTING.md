@@ -1,6 +1,6 @@
-# Contributing to ind2mg
+# Contributing to Rgram
 
-This outlines how to propose a change to ind2mg. 
+This outlines how to propose a change to Rgram. 
 For more detailed info about contributing to this, and other tidyverse packages, please see the
 [**development contributing guide**](https://rstd.io/tidy-contrib). 
 
