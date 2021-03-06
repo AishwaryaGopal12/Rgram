@@ -16,7 +16,7 @@ There are two packages in the R ecosystem that provide image and advanced image 
 
 - `flipping`: This function can be used to flip the image either in the horizontal or vertical direction.
 
-- `greyscale`: The greyscale function converts a color image into a greyscale image.  
+- `grayscale`: The greyscale function converts a color image into a greyscale image.  
 
 - `padding`: This function can be used to add padding to the the borders of an image. 
 
