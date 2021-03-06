@@ -9,6 +9,6 @@
 #'
 #' @examples
 #' pad("images/samples.jpg", 20, "images/padding.png")
-pad <- function(image, width, output_path){
+padding <- function(image, width, output_path){
   break
 }

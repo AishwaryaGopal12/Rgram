@@ -9,6 +9,6 @@
 #'
 #' @examples
 #' flip("images/samples.jpg", 'h' , "images/flip.png")
-flip <- function(image, direction, output_path){
+flipping <- function(image, direction, output_path){
   break
 }
