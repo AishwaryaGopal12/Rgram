@@ -40,6 +40,17 @@ library(Rgram)
 ## basic example code
 ```
 
+## Documentation
+
+The help file can be viewed by:
+
+```{r}
+?padding
+?flipping
+?rotate
+?greyscale
+```
+
 What is special about using `README.Rmd` instead of just `README.md`?
 You can include R chunks like so:
 
