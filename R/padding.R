@@ -20,13 +20,14 @@ padding <- function(input_path, width, output_path){
   assert("Please provide a string as the path for the output image file.", is.character(output_path))
 
   #Reading image file as matrix
-  input_mat <- load.image(input_path)
+  input <- load.image(input_path)
 
-  img_pad <- pad(pad(im, width, pos=-1,"xy",val="black"), width, pos=1, "xy", val="black")
+  img_pad <- pad(pad(input, width, pos=-1,"xy",val="black"), width, pos=1, "xy", val="black")
 
 
    #Save flipped image
-
-  save.image(img_pad, output_path, quality = 0.7)
+  tmpF <- tempfile(fileext=".jpg")
+  #Save boats image
+  save.image(img_pad, tmpF)
 
 }
