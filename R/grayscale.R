@@ -1,39 +1,49 @@
+library(imager)
+library(testit)
+
 #' Converting a color image into a grayscale image.
 #'
 #' @param image  string, path for the input image file
-#' @param output_path string, path for the output image file
 #'
-#' @return an image file at the specified output path in .png format
+#' @return an image file in gray scale
 #' @export
 #'
 #' @examples
-#' grayscale("images/sample.png", "images/greyscale.png")
-grayscale <- function(image, output_path){
-    # exception handling
-    assert("Please type in  a string as the path for the input image file.", is.character(image))
-    assert("Please type in  a string as the path for the output image file.", is.character(output_path))
+#' grayscale("images/samples.jpg")
 
-    input_img <- readPNG(image)
+grayscale <- function(image){
 
-    input_img_height <- dim(input_img)[1]
-    input_img_width <- dim(input_img)[2]
+  # exception handling
+  assert("Please provide a string as the path for the input image file.", is.character(image))
 
-    img_gs <- array(dim = dim(input_img))
+  #Reading image file as matrix
+  input <- load.image(image)
 
-    for (i in 1:input_img_height) {
-      for (j in 1:input_img_width) {
-        R = input_img[i,j,1]
-        G = input_img[i,j,2]
-        B = input_img[i,j,3]
+  input_height <- dim(input)[1]
+  input_width <- dim(input)[2]
+  input_depth <- dim(input)[3]
 
-        gray_scale = 0.2989*R + 0.5870*G + 0.1140*B
+  image_grey <- array(dim = dim(input))
 
-        output_img[i,j,1] = gray_scale
-        output_img[i,j,2] = gray_scale
-        output_img[i,j,3] = gray_scale
+  for (i in 1:input_height) {
+    for (j in 1:input_width) {
+      for (k in 1:input_depth){
+        R = input[i,j,k,1]
+        G = input[i,j,k,2]
+        B = input[i,j,k,3]
+
+        gray = 0.2989*R + 0.5870*G + 0.1140*B
+
+        image_grey[i,j,k,1] = gray
+        image_grey[i,j,k,2] = gray
+        image_grey[i,j,k,3] = gray
       }
     }
+  }
 
-    writePNG(output_img, output_path)
+  as.cimg(image_grey)
 
+  # gray_scale = imager::grayscale(img)
+  # gray_scale
 }
+
