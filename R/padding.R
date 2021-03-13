@@ -24,10 +24,5 @@ padding <- function(input_path, width, output_path){
 
   img_pad <- pad(pad(input, width, pos=-1,"xy",val="black"), width, pos=1, "xy", val="black")
 
-
-   #Save flipped image
-  tmpF <- tempfile(fileext=".jpg")
-  #Save boats image
-  save.image(img_pad, tmpF)
-
+  img_pad
 }
