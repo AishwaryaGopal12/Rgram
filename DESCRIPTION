@@ -1,21 +1,25 @@
 Package: Rgram
-Title: What the Package Does (One Line, Title Case)
+Title: RGram Aims to Make the Image Processing Task Easy and Intuitive.
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Rui",
            family = "Wang",
+           email= 'abc@gmail.com',
            role = c("aut", "cre")
           )
     person(given = "Mo",
            family = "Garoub",
+           email= 'abc@gmail.com',
            role = c("aut", "cre")
           )
     person(given = "Aishwarya",
            family = "Gopal",
+           email= 'abc@gmail.com',
            role = c("aut", "cre")
            )
     person(given = "Joshua",
            family = "Lim",
+           email= 'jla510@student.ubc.ca',
            role = c("aut", "cre")
           ) 
 Description: A simple R package that provides functions to rotate, flip, pad, and change image to grayscale.
@@ -30,4 +34,5 @@ Imports:
     dplyr,
     tidyverse,
     testthat,
-    imager
+    imager,
+    testit

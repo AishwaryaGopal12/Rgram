@@ -2,6 +2,7 @@
 
 context("Padding image")
 library(imager)
+library(testit)
 
 
 test_that("In case the input is not an image", {

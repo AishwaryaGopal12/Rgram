@@ -1,16 +1,29 @@
-#' Rotates an OpenCV 2 / NumPy image about it's centre by the given degree (in degrees).
-#' The returned image will be large enough to hold the entire new image, with a black
-#' background
+library(imager)
+library(testit)
+
+#' Rotates an image about it's center by the given degree.
 #'
 #' @param image path of input file
 #' @param degree int of degree
-#' @param output_path string, path for the output image file
 #'
-#' @return an image file at the specified output path in .png format
+#' @return an image with the specified degree rotated
 #' @export
 #'
 #' @examples
-#' rotate("images/samples.jpg", 60 , "images/rotate_60.png")
-rotate <- function(image, degree, output_path){
-  break
+#' rotate("images/samples.jpg", 60)
+rotate <- function(image, degree){
+
+  # exception handling
+  assert("Please provide a string as the path for the input image file.", is.character(image))
+
+  #Reading image file as matrix
+  input <- load.image(image)
+
+  img_rotate <- imrotate(input, 60)
+
+  img_rotate
 }
+
+
+
+
