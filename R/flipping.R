@@ -1,6 +1,6 @@
+library(testit)
 library(png)
 library(tableMatrix)
-library(testit)
 
 #' Flipping an image horizontally in Black & White
 #'

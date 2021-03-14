@@ -5,22 +5,22 @@ Authors@R:
     person(given = "Rui",
            family = "Wang",
            email= 'rwang778@gmail.com',
-           role = c("aut", "cre")
+           role = c("aut", "cre", "ctb", "cph")
           )
     person(given = "Mo",
            family = "Garoub",
            email= 'mgaroub@student.ubc.ca',
-           role = c("aut", "cre")
+           role = c("aut", "ctb", "cph")
           )
     person(given = "Aishwarya",
            family = "Gopal",
            email= 'aish912@student.ubc.ca',
-           role = c("aut", "cre")
+           role = c("aut", "ctb", "cph")
            )
     person(given = "Joshua",
            family = "Lim",
            email= 'jla510@student.ubc.ca',
-           role = c("aut", "cre")
+           role = c("aut", "ctb", "cph")
           ) 
 Description: A simple R package that provides functions to rotate, flip, pad, and change image to grayscale.
 License: MIT + file LICENSE
@@ -28,8 +28,6 @@ Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.1.1
-Suggests: 
-    testthat
 Imports: 
     dplyr,
     tidyverse,
