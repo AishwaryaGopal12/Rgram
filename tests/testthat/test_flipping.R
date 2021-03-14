@@ -1,7 +1,6 @@
 # This script tests the flipping() function
 
 context("Flipping image")
-library(imager)
 library(testit)
 library(png)
 

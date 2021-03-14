@@ -4,23 +4,23 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Rui",
            family = "Wang",
-           email= 'rwang778@gmail.com',
+           email = 'rwang778@gmail.com',
            role = c("aut", "cre", "ctb", "cph")
           )
     person(given = "Mo",
            family = "Garoub",
-           email= 'mgaroub@student.ubc.ca',
-           role = c("aut", "ctb", "cph")
+           email = 'mgaroub@student.ubc.ca',
+           role = c("aut", "ctb", "cph", "cre")
           )
     person(given = "Aishwarya",
            family = "Gopal",
-           email= 'aish912@student.ubc.ca',
-           role = c("aut", "ctb", "cph")
+           email = 'aish912@student.ubc.ca',
+           role = c("aut", "ctb", "cph", "cre")
            )
     person(given = "Joshua",
            family = "Lim",
-           email= 'jla510@student.ubc.ca',
-           role = c("aut", "ctb", "cph")
+           email = 'jla510@student.ubc.ca',
+           role = c("aut", "ctb", "cph", "cre")
           ) 
 Description: A simple R package that provides functions to rotate, flip, pad, and change image to grayscale.
 License: MIT + file LICENSE
@@ -32,7 +32,11 @@ Imports:
     dplyr,
     tidyverse,
     testthat,
+    igraph,
     imager,
     testit,
     png,
-    tableMatrix
+    tableMatrix,
+    readbitmap,
+    bmp,
+    tiff
