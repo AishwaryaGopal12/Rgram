@@ -26,11 +26,10 @@ This is a basic example which shows you how to solve a common problem:
 
 `library(Rgram)`
 
-1. `flipping(input_path, direction, output_path)`
+1. `flipping(input_path, output_path)`
 
 Arguments:\
     - `input_path`: path to input image\
-    - `direction`: direction of flip ("h" for horizontal/ "v" for vertical)\
     - `output_path`: path to output image
 
 2. `grayscale(image)`
