@@ -24,7 +24,6 @@ install.packages("Rgram")
 
 This is a basic example which shows you how to solve a common problem:
 
-``` 
 `library(Rgram)`
 
 1. `flipping(input_path, direction, output_path)`
@@ -34,23 +33,23 @@ Arguments:\
     - `direction`: direction of flip ("h" for horizontal/ "v" for vertical)\
     - `output_path`: path to output image
 
-2. `grayscale(input_path)`
+2. `grayscale(image)`
 
 Arguments:\
-    - `input_path`: path to input image\
+    - `image`: path to input image\
 
-3. `padding(input_path, width)`
+3. `padding(image, width)`
 
 Arguments:\
-    - `input_path`: path to input image\
+    - `image`: path to input image\
     - `width`: number of pixels of padding to be added\
 
-4. `rotate(input_path, degrees)`
+4. `rotate(image, degrees)`
 
 Arguments:\
-    - `input_path`: path to input image\
+    - `image`: path to input image\
     - `degrees`: the degrees to rotate the image by\
-    
+
 
 ## Documentation
 
