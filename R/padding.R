@@ -10,8 +10,7 @@ library(testit)
 #' @return an image matrix that has been padded
 #' @export
 #'
-#' @examples
-#' pad("images/samples.jpg", 20)
+
 padding <- function(image, width){
 
   # exception handling

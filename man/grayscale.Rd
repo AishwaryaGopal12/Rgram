@@ -15,6 +15,3 @@ an image file in gray scale
 \description{
 Converting a color image into a grayscale image.
 }
-\examples{
-grayscale("images/samples.jpg")
-}

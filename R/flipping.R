@@ -4,14 +4,13 @@ library(tableMatrix)
 
 #' Flipping an image horizontally in Black & White
 #'
-#' @param image path of input file
+#' @param input_path path of input file
 #' @param output_path string, path for the output image file
 #'
 #' @return an image file at the specified output path in .png format
 #' @export
 #'
-#' @examples
-#' flipping("images/samples.png", "images/flip.png")
+
 
 
 flipping <- function(input_path, output_path) {
@@ -21,7 +20,7 @@ flipping <- function(input_path, output_path) {
   testit::assert("Please type in  a string as the path for the input image file.", is.character(input_path))
 
 
-  input_img <- readPNG(input_path)
+  input_img <- png::readPNG(input_path)
 
 
   #Creating three RGB channels
@@ -57,7 +56,7 @@ flipping <- function(input_path, output_path) {
   outputv <- array(c(vector_Rs,vector_Gs,vector_Bs),dim = c(diminsion_r,diminsion_c,3))
 
   #Save flipped image
-  writePNG(outputv,output_path)
+  png::writePNG(outputv,output_path)
   #as.cimg(outputv)
 
 }

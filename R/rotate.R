@@ -9,8 +9,7 @@ library(testit)
 #' @return an image with the specified degree rotated
 #' @export
 #'
-#' @examples
-#' rotate("images/samples.jpg", 60)
+
 rotate <- function(image, degree){
 
   # exception handling
