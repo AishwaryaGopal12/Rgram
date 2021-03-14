@@ -8,7 +8,7 @@
 
 The goal of Rgram is to make the image processing task easy and
 intuitive. With RGram, users can rotate the image, convert it to
-greyscale, flip it in either a horizontal or vertical direction, and add
+greyscale, flip it horizontally in Black&White, and add
 padding to it (frame).
 
 ## Installation
