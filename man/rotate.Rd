@@ -17,6 +17,3 @@ an image with the specified degree rotated
 \description{
 Rotates an image about it's center by the given degree.
 }
-\examples{
-rotate("images/samples.jpg", 60)
-}

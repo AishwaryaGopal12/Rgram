@@ -8,8 +8,7 @@ library(testit)
 #' @return an image file in gray scale
 #' @export
 #'
-#' @examples
-#' grayscale("images/samples.jpg")
+
 
 grayscale <- function(image){
 

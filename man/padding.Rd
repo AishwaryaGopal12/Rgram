@@ -17,6 +17,3 @@ an image matrix that has been padded
 \description{
 Add a padding to the border of the image
 }
-\examples{
-pad("images/samples.jpg", 20)
-}
