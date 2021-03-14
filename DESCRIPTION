@@ -14,7 +14,7 @@ Authors@R:
           )
     person(given = "Aishwarya",
            family = "Gopal",
-           email= 'abc@gmail.com',
+           email= 'aish912@student.ubc.ca',
            role = c("aut", "cre")
            )
     person(given = "Joshua",

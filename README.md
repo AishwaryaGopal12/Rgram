@@ -20,13 +20,37 @@ You can install the released version of Rgram from
 install.packages("Rgram")
 ```
 
-## Example
+## Usage
 
 This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(Rgram)
-## basic example code
+
+1. `flipping(input_path, direction, output_path)`
+
+Arguments:\
+    - `input_path`: path to input image\
+    - `direction`: direction of flip ("h" for horizontal/ "v" for vertical)\
+    - `output_path`: path to output image
+
+2. `grayscale(input_path)`
+
+Arguments:\
+    - `input_path`: path to input image\
+
+3. `padding(input_path, width)`
+
+Arguments:\
+    - `input_path`: path to input image\
+    - `width`: number of pixels of padding to be added\
+
+4. `rotate(input_path, degrees)`
+
+Arguments:\
+    - `input_path`: path to input image\
+    - `degrees`: the degrees to rotate the image by\
+
 ```
 
 ## Documentation
