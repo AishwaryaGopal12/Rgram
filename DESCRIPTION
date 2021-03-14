@@ -35,4 +35,6 @@ Imports:
     tidyverse,
     testthat,
     imager,
-    testit
+    testit,
+    png,
+    tableMatrix
