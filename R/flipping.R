@@ -17,8 +17,8 @@ library(tableMatrix)
 flipping <- function(input_path, output_path) {
 
   # exception handling
-  assert("Invalid flipping")
-  assert("Please type in  a string as the path for the input image file.", is.character(input_path))
+  testit::assert("Invalid flipping")
+  testit::assert("Please type in  a string as the path for the input image file.", is.character(input_path))
 
 
   input_img <- readPNG(input_path)
