@@ -24,8 +24,8 @@ install.packages("Rgram")
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
-library(Rgram)
+``` 
+`library(Rgram)`
 
 1. `flipping(input_path, direction, output_path)`
 
@@ -50,8 +50,7 @@ Arguments:\
 Arguments:\
     - `input_path`: path to input image\
     - `degrees`: the degrees to rotate the image by\
-
-```
+    
 
 ## Documentation
 
