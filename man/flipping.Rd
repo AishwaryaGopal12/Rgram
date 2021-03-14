@@ -2,14 +2,12 @@
 % Please edit documentation in R/flipping.R
 \name{flipping}
 \alias{flipping}
-\title{Flipping an image in either horizontal or vertical direction}
+\title{Flipping an image horizontally in black and white }
 \usage{
-flipping(image, direction, output_path)
+flipping(image, output_path)
 }
 \arguments{
 \item{image}{path of input file}
-
-\item{direction}{direction of flip, horizontal="h", vertical = "v"}
 
 \item{output_path}{string, path for the output image file}
 }
@@ -20,5 +18,5 @@ an image file at the specified output path in .png format
 Flipping an image in either horizontal or vertical direction
 }
 \examples{
-flip("images/samples.jpg", 'h' , "images/flip.png")
+flip("images/samples.jpg", "images/flip.png")
 }
