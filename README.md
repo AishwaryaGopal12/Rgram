@@ -8,7 +8,7 @@
 
 The goal of Rgram is to make the image processing task easy and
 intuitive. With RGram, users can rotate the image, convert it to
-greyscale, flip it in either a horizontal or vertical direction, and add
+greyscale, flip it horizontally in Black&White, and add
 padding to it (frame).
 
 ## Installation
@@ -20,14 +20,35 @@ You can install the released version of Rgram from
 install.packages("Rgram")
 ```
 
-## Example
+## Usage
 
 This is a basic example which shows you how to solve a common problem:
 
-``` r
-library(Rgram)
-## basic example code
-```
+`library(Rgram)`
+
+1. `flipping(input_path, output_path)`
+
+Arguments:\
+    - `input_path`: path to input image\
+    - `output_path`: path to output image
+
+2. `grayscale(image)`
+
+Arguments:\
+    - `image`: path to input image\
+
+3. `padding(image, width)`
+
+Arguments:\
+    - `image`: path to input image\
+    - `width`: number of pixels of padding to be added\
+
+4. `rotate(image, degrees)`
+
+Arguments:\
+    - `image`: path to input image\
+    - `degrees`: the degrees to rotate the image by\
+
 
 ## Documentation
 

@@ -4,17 +4,17 @@ Version: 0.0.0.9000
 Authors@R: 
     person(given = "Rui",
            family = "Wang",
-           email= 'abc@gmail.com',
+           email= 'rwang778@gmail.com',
            role = c("aut", "cre")
           )
     person(given = "Mo",
            family = "Garoub",
-           email= 'abc@gmail.com',
+           email= 'mgaroub@student.ubc.ca',
            role = c("aut", "cre")
           )
     person(given = "Aishwarya",
            family = "Gopal",
-           email= 'abc@gmail.com',
+           email= 'aish912@student.ubc.ca',
            role = c("aut", "cre")
            )
     person(given = "Joshua",
@@ -35,4 +35,6 @@ Imports:
     tidyverse,
     testthat,
     imager,
-    testit
+    testit,
+    png,
+    tableMatrix
