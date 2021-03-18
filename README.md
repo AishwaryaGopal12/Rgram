@@ -2,7 +2,7 @@
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # Rgram
-
+[![codecov](https://codecov.io/gh/UBC-MDS/Rgram/branch/master/graph/badge.svg?token=TY1OZUNAQ8)](https://codecov.io/gh/UBC-MDS/Rgram)
 <!-- badges: start -->
 <!-- badges: end -->
 
