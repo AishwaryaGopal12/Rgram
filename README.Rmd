@@ -17,7 +17,6 @@ knitr::opts_chunk$set(
 
 <!-- badges: start -->
 [![R build status](https://github.com/UBC-MDS/Rgram/workflows/R-CMD-CHECK/badge.svg)](https://github.com/UBC-MDS/Rgram/actions)
-[![R build status](https://github.com/UBC-MDS/Rgram/workflows/TEST-COVERAGE/badge.svg)](https://github.com/UBC-MDS/Rgram/actions)
 [![R build status](https://github.com/UBC-MDS/Rgram/workflows/test-coverage/badge.svg)](https://github.com/UBC-MDS/Rgram/actions)
 <!-- badges: end -->
 
