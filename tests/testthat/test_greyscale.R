@@ -12,9 +12,9 @@ test_that("If user specifies an additional argument, it throws an error", {
 
 test_that("Color image is converted to grayscale", {
 
-  output<- grayscale("test_images/grayscale/sample.jpg")
-  exp_output <- load.image("test_images/grayscale/gray_image.jpg")
-  expect_equal(output, exp_output, tolerance=1e-1)
+  output_g<- grayscale("test_images/grayscale/sample.jpg")
+  exp_output_g <- load.image("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/grayscale/gray_image.jpg")
+  expect_equal(output_g, exp_output_g, tolerance=1e-1)
 
 })
 

@@ -1,5 +1,5 @@
 Package: Rgram
-Title: RGram Aims to Make the Image Processing Task Easy and Intuitive.
+Title: RGram Aims to Make the Image Processing Task Easy and Intuitive
 Version: 0.0.0.9000
 Authors@R: 
     person(given = "Rui",
@@ -22,7 +22,7 @@ Authors@R:
            email = 'jla510@student.ubc.ca',
            role = c("aut", "ctb", "cph", "cre")
           ) 
-Description: A simple R package that provides functions to rotate, flip, pad, and change image to grayscale.
+Description: A simple R package that provides functions to rotate, flip, pad, and change image to grayscale
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
@@ -40,6 +40,7 @@ Imports:
     readbitmap,
     bmp,
     tiff,
-    covr
+    covr (>= 3.5.1),
+    here (>= 0.1)
 URL: https://github.com/UBC-MDS/Rgram
 BugReports: https://github.com/UBC-MDS/Rgram/issues

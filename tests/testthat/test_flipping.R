@@ -2,24 +2,24 @@
 
 context("Flipping image")
 library(testit)
-library(png)
+library(imager)
 
 
-flipping("test_images/flipping/sample.png", "test_images/flipping/flipping_H.png")
-flipping("test_images/flipping/flipping_H.png", "test_images/flipping/flipping_H2.png")
+flipping("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/flipping/sample.png", "test_images/flipping/flipping_H.png")
+flipping("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/flipping/flipping_H.png", "test_images/flipping/flipping_H2.png")
 
-original = readPNG("test_images/flipping/sample.png")
+original = load.image("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/flipping/sample.png")
 
 test_that("Image is flipped horizontally in black and white", {
 
-  output = readPNG("test_images/flipping/flipping_H2.png")
-  expect_equal(original, output, tolerance=0.3)
+  output_f = load.image("test_images/flipping/flipping_H2.png")
+  expect_equal(original, output_f, tolerance=0.5)
 
 
 })
 
 test_that("In case the input is not an image", {
-  expect_error(flipping("test_images/grayscale/test.pdf"))
+  expect_error(flipping("test_images/flipping/test.pdf"))
 })
 
 test_that("If user specifies an additional argument, it throws an error", {
