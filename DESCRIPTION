@@ -39,4 +39,7 @@ Imports:
     tableMatrix,
     readbitmap,
     bmp,
-    tiff
+    tiff,
+    covr
+URL: https://github.com/UBC-MDS/Rgram
+BugReports: https://github.com/UBC-MDS/Rgram/issues
