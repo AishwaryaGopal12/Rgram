@@ -16,17 +16,17 @@ library(imager)
 #  expect_equal(original, output_f, tolerance=0.5)
 #})
 
-test_that("In case the input is not an image", {
-  expect_error(flipping("test_images/flipping/test.pdf"))
-})
+#test_that("In case the input is not an image", {
+#  expect_error(flipping("test_images/flipping/test.pdf"))
+#})
 
-test_that("If user specifies an additional argument, it throws an error", {
+#test_that("If user specifies an additional argument, it throws an error", {
 
-  expect_error(flipping("?/sample.png", "flipping_h.png", "XYZ"))
-})
+#  expect_error(flipping("?/sample.png", "flipping_h.png", "XYZ"))
+#})
 
-test_that("In case the input/output is not a string", {
+#test_that("In case the input/output is not a string", {
 
-  expect_error(flipping(123,"flipping_v.png"))
-  expect_error(flipping("flipping_v.png", c(1,2,3)))
-})
+# expect_error(flipping(123,"flipping_v.png"))
+# expect_error(flipping("flipping_v.png", c(1,2,3)))
+#})
