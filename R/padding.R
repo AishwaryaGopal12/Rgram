@@ -13,13 +13,5 @@ library(testit)
 
 padding <- function(image, width){
 
-  # exception handling
-  assert("Please provide a string as the path for the input image file.", is.character(image))
 
-  #Reading image file as matrix
-  input <- load.image(image)
-
-  img_pad <- pad(pad(input, width, pos=-1,"xy",val="black"), width, pos=1, "xy", val="black")
-
-  img_pad
 }
