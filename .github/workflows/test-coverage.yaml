@@ -45,9 +45,6 @@ jobs:
         shell: Rscript {0}
 
       - name: Test coverage
-        run: |
-          here::here()
-          list.files(path=here::here())
-          list.files(path=here::here(".."))
+        run:
           covr::codecov()
         shell: Rscript {0}
