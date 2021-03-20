@@ -6,13 +6,13 @@ library(testit)
 
 test_that("If user specifies an additional argument, it throws an error", {
 
-  expect_error(grayscale("test_images/grayscale/sample.jpg", 20, "test_images/grayscale/gray_image.jpg", "box"))
+  expect_error(grayscale("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/grayscale/sample.jpg", 20, "test_images/grayscale/gray_image.jpg", "box"))
 
 })
 
 test_that("Color image is converted to grayscale", {
 
-  output_g<- grayscale("test_images/grayscale/sample.jpg")
+  output_g<- grayscale("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/grayscale/sample.jpg")
   exp_output_g <- load.image("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/grayscale/gray_image.jpg")
   expect_equal(output_g, exp_output_g, tolerance=1e-1)
 })
