@@ -8,6 +8,7 @@ on:
     branches:
       - main
       - master
+      - josh-m4
   pull_request:
     branches:
       - main
@@ -58,11 +59,11 @@ jobs:
           path: ${{ env.R_LIBS_USER }}
           key: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-${{ hashFiles('.github/depends.Rds') }}
           restore-keys: ${{ runner.os }}-${{ hashFiles('.github/R-version') }}-1-
-          
+
       - name: Install XQuartz on macOS
         if: runner.os == 'macOS'
         run: brew install xquartz --cask
-        
+
       - name: Install system dependencies
         if: runner.os == 'Linux'
         run: |
