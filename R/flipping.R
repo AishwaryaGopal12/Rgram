@@ -1,7 +1,7 @@
 library(testit)
 library(png)
 library(tableMatrix)
-
+library(imager)
 #' Flipping an image horizontally in Black & White
 #'
 #' @param input_path path of input file
@@ -20,7 +20,7 @@ flipping <- function(input_path, output_path) {
   testit::assert("Please type in  a string as the path for the input image file.", is.character(input_path))
 
 
-  input_img <- png::readPNG(input_path)
+  input_img <- load.image(input_path)
 
 
   #Creating three RGB channels

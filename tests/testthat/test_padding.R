@@ -20,10 +20,9 @@ test_that("If user specifies an additional argument, it throws an error", {
 
 test_that("Color image is paddingred", {
 
-  output<- padding("test_images/padding/sample.jpg", 20)
-  exp_output <- load.image("test_images/padding/padding_output.jpg")
-  expect_equal(output, exp_output, tolerance=1e-1)
-
+  output_p<- padding("test_images/padding/sample.jpg", 20)
+  exp_output_p <- load.image("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/padding/padding_output.jpg")
+  expect_equal(output_p, exp_output_p, tolerance=1e-1)
 })
 
 test_that("In case the input/output is not a string", {
