@@ -7,7 +7,7 @@
 <!-- badges: end -->
 
 The goal of Rgram is to make the image processing task easy and
-intuitive. With RGram, users can rotate the image, convert it to
+intuitive. With Rgram, users can rotate the image, convert it to
 greyscale, flip it horizontally in Black&White, and add
 padding to it (frame).
 
@@ -18,14 +18,14 @@ You can install the released version of Rgram from
 
 ``` r
 install.packages("devtools")
-devtools::install_github("rgram")
+devtools::install_github("Rgram")
 ```
 
 ## Usage
 
 This is a basic example which shows you how to solve a common problem:
 
-`library(rgram)`
+`library(Rgram)`
 
 1. `flipping(input_path, output_path)`
 
