@@ -18,6 +18,7 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 [![R build status](https://github.com/UBC-MDS/Rgram/workflows/R-CMD-CHECK/badge.svg)](https://github.com/UBC-MDS/Rgram/actions)
 [![R build status](https://github.com/UBC-MDS/Rgram/workflows/test-coverage/badge.svg)](https://github.com/UBC-MDS/Rgram/actions)
+[![Codecov test coverage](https://codecov.io/gh/UBC-MDS/Rgram/branch/master/graph/badge.svg)](https://codecov.io/gh/UBC-MDS/Rgram?branch=master)
 <!-- badges: end -->
 
 The goal of Rgram is to make the image processing task easy and intuitive. With RGram, users can rotate the image, convert it to greyscale, flip it in either a horizontal or vertical direction, and add padding to it (frame).
@@ -27,7 +28,9 @@ The goal of Rgram is to make the image processing task easy and intuitive. With 
 You can install the released version of Rgram from [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("Rgram")
+install.packages("devtools")
+devtools::install_github("rgram")
+
 ```
 
 ## Example
@@ -35,7 +38,8 @@ install.packages("Rgram")
 This is a basic example which shows you how to solve a common problem:
 
 ```{r example}
-library(Rgram)
+install.packages("devtools")
+devtools::install_github("rgram")
 ## basic example code
 ```
 

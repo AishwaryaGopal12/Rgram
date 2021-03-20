@@ -17,14 +17,15 @@ You can install the released version of Rgram from
 [CRAN](https://CRAN.R-project.org) with:
 
 ``` r
-install.packages("Rgram")
+install.packages("devtools")
+devtools::install_github("rgram")
 ```
 
 ## Usage
 
 This is a basic example which shows you how to solve a common problem:
 
-`library(Rgram)`
+`library(rgram)`
 
 1. `flipping(input_path, output_path)`
 

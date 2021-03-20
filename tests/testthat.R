@@ -1,4 +1,4 @@
 library(testthat)
-library(Rgram)
+library(rgram)
 
-test_check("Rgram")
+test_check("rgram")

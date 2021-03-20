@@ -1,4 +1,4 @@
-Package: Rgram
+Package: rgram
 Title: RGram Aims to Make the Image Processing Task Easy and Intuitive
 Version: 0.0.0.9000
 Authors@R: 
@@ -39,10 +39,11 @@ Imports:
     readbitmap,
     bmp,
     tiff,
-    covr (>= 3.5.1),
     here (>= 0.1)
 Depends: 
     R (>= 2.10)
 License: MIT + file LICENSE
 URL: https://github.com/UBC-MDS/Rgram
 BugReports: https://github.com/UBC-MDS/Rgram/issues
+Suggests: 
+    covr
