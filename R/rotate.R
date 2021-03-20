@@ -12,6 +12,15 @@ library(testit)
 
 rotate <- function(image, degree){
 
+  # exception handling
+  assert("Please provide a string as the path for the input image file.", is.character(image))
+
+  #Reading image file as matrix
+  input <- load.image(image)
+
+  img_rotate <- imrotate(input, 60)
+
+  img_rotate
 }
 
 
