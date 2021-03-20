@@ -46,6 +46,8 @@ jobs:
 
       - name: Test coverage
         run: |
-          options(covr.flags = c(CFLAGS = "-O0 --coverage", CXXFLAGS = "-O0 --coverage", LDFLAGS = "--coverage"))
+          here::here()
+          list.files(path=here::here())
+          list.files(path=here::here(".."))
           covr::codecov()
         shell: Rscript {0}
