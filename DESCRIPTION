@@ -47,3 +47,5 @@ URL: https://github.com/UBC-MDS/Rgram
 BugReports: https://github.com/UBC-MDS/Rgram/issues
 Suggests: 
     covr
+    here
+    
