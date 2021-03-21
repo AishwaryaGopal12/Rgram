@@ -12,7 +12,6 @@ library(tableMatrix)
 #'
 
 
-
 flipping <- function(input_path) {
 
   # exception handling
