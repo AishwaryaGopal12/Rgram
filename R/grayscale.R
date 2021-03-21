@@ -11,7 +11,7 @@ library(testit)
 
 grayscale <- function(image){
 
-  input <- imager::load.image(image)
+  input <- load.image(image)
 
   input_height <- dim(input)[1]
   input_width <- dim(input)[2]
