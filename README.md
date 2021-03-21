@@ -18,7 +18,7 @@ You can install the released version of Rgram from
 
 ``` r
 install.packages("devtools")
-devtools::install_github("Rgram")
+devtools::install_github("UBC-MDS/"rgram")
 ```
 
 ## Usage
@@ -27,11 +27,10 @@ This is a basic example which shows you how to solve a common problem:
 
 `library(Rgram)`
 
-1. `flipping(input_path, output_path)`
+1. `flipping(image)`
 
 Arguments:\
-    - `input_path`: path to input image\
-    - `output_path`: path to output image
+    - `image`: path to input image
 
 2. `grayscale(image)`
 
