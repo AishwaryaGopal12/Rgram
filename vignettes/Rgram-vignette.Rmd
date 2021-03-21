@@ -1,0 +1,74 @@
+---
+title: "Rgram-vignette"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Tour to Rgram package}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+```{r setup}
+library(Rgram)
+```
+
+This document introduces Rgram and shows how to use the package. 
+
+## Introduction to Rgram 
+
+Images form a significant part of the data in today's world. Whether you want to enhance your poorly-lit profile picture or analyze satellite images, filters are your best friends.Rgram aims to help you to create four filters for your image: 
+
+
+- `flipping`: This function can be used to flip the image horizontally in black and white.
+
+- `greyscale`: This function can be used to convert a color image into a greyscale image.  
+
+- `padding`: This function can be used to add padding to the the borders of an image. 
+
+- `rotate`: This function can be used to rotate an image by the specified number of degrees. 
+
+
+## Data: An image to be called using 'library(imager)' or 'library(png)' 
+
+To call/read your input image you need to load two libraries: imager and png. 
+
+```{r}
+library(imager)
+library(png)
+```
+
+## Examples 
+
+
+#### 'greyscale' function 
+
+
+```{r}
+grayscale("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/grayscale/sample.jpg") %>% 
+  plot()
+
+```
+
+
+#### 'rotate' function 
+
+
+```{r}
+rotate("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/rotate/sample.jpg", 60) %>% 
+  plot()
+```
+
+
+#### 'padding' function 
+
+
+```{r}
+padding("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/padding/sample.jpg", 20) %>% 
+  plot()
+```
