@@ -46,9 +46,8 @@ License: MIT + file LICENSE
 URL: https://github.com/UBC-MDS/Rgram
 BugReports: https://github.com/UBC-MDS/Rgram/issues
 Suggests: 
-    covr
-    tiff
-Suggests: 
+    covr,
+    tiff,
     knitr,
     rmarkdown
 VignetteBuilder: knitr

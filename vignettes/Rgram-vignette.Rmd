@@ -49,17 +49,15 @@ library(png)
 #### 'greyscale' function 
 
 
-```{r}
-grayscale("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/grayscale/sample.jpg") %>% 
-  plot()
-
+```
+grayscale("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/grayscale/sample.jpg") %>% plot()
 ```
 
 
 #### 'rotate' function 
 
 
-```{r}
+```
 rotate("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/rotate/sample.jpg", 60) %>% 
   plot()
 ```
@@ -68,7 +66,7 @@ rotate("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/te
 #### 'padding' function 
 
 
-```{r}
+```
 padding("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/padding/sample.jpg", 20) %>% 
   plot()
 ```

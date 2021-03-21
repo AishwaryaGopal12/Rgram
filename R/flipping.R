@@ -13,14 +13,14 @@ library(tableMatrix)
 
 
 
-flipping <- function(input_path, output_path) {
+flipping <- function(input_path) {
 
   # exception handling
   testit::assert("Invalid flipping")
   testit::assert("Please type in  a string as the path for the input image file.", is.character(input_path))
 
 
-  input_img <- png::readPNG(input_path)
+  input_img<- load.image(input_path)
 
 
   #Creating three RGB channels
@@ -56,8 +56,7 @@ flipping <- function(input_path, output_path) {
   outputv <- array(c(vector_Rs,vector_Gs,vector_Bs),dim = c(diminsion_r,diminsion_c,3))
 
   #Save flipped image
-  png::writePNG(outputv,output_path)
-  #as.cimg(outputv)
+  as.cimg(outputv)
 
 }
 

@@ -4,7 +4,7 @@
 \alias{flipping}
 \title{Flipping an image horizontally in Black & White}
 \usage{
-flipping(input_path, output_path)
+flipping(input_path)
 }
 \arguments{
 \item{input_path}{path of input file}
