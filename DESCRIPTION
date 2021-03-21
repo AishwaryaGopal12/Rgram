@@ -30,7 +30,6 @@ RoxygenNote: 7.1.1
 Imports: 
     dplyr,
     tidyverse,
-    testthat,
     igraph,
     imager,
     testit,
@@ -46,6 +45,7 @@ License: MIT + file LICENSE
 URL: https://github.com/UBC-MDS/Rgram
 BugReports: https://github.com/UBC-MDS/Rgram/issues
 Suggests: 
-    covr
-    here
+    covr,
+    testthat (>= 3.0.0)
+
     
