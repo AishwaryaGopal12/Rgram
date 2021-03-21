@@ -52,8 +52,10 @@ Arguments:\
 
 ## Documentation
 
+[vignette page](https://github.com/UBC-MDS/Rgram/blob/master/docs/articles/Rgram-vignette.html)
+
 The help file can be viewed by:
-[vignette page](file:///C:/Users/mgaro/Desktop/Rgram/docs/articles/Rgram-vignette.html)
+
 
 ``` r
 ?padding
