@@ -8,8 +8,6 @@ flipping(input_path)
 }
 \arguments{
 \item{input_path}{path of input file}
-
-\item{output_path}{string, path for the output image file}
 }
 \value{
 an image file at the specified output path in .png format

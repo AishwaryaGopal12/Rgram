@@ -5,7 +5,6 @@ library(tableMatrix)
 #' Flipping an image horizontally in Black & White
 #'
 #' @param input_path path of input file
-#' @param output_path string, path for the output image file
 #'
 #' @return an image file at the specified output path in .png format
 #' @export
