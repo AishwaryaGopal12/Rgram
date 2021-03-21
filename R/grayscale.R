@@ -35,7 +35,7 @@ grayscale <- function(image){
     }
   }
 
-   as.cimg(image_grey)
+  imager::as.cimg(image_grey)
 
 }
 

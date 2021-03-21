@@ -5,12 +5,10 @@ library(tableMatrix)
 #' Flipping an image horizontally in Black & White
 #'
 #' @param input_path path of input file
-#' @param output_path string, path for the output image file
 #'
 #' @return an image file at the specified output path in .png format
 #' @export
 #'
-
 
 
 flipping <- function(input_path) {
@@ -20,7 +18,7 @@ flipping <- function(input_path) {
   testit::assert("Please type in  a string as the path for the input image file.", is.character(input_path))
 
 
-  input_img<- load.image(input_path)
+  input_img<- imager::load.image(input_path)
 
 
   #Creating three RGB channels
@@ -56,7 +54,7 @@ flipping <- function(input_path) {
   outputv <- array(c(vector_Rs,vector_Gs,vector_Bs),dim = c(diminsion_r,diminsion_c,3))
 
   #Save flipped image
-  as.cimg(outputv)
+  imager::as.cimg(outputv)
 
 }
 

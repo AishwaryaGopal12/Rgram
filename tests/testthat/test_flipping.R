@@ -4,7 +4,6 @@ context("Flipping image")
 library(testit)
 library(imager)
 
-
 test_that("Image is flipped horizontally in black and white", {
 
   original <- load.image("https://raw.githubusercontent.com/UBC-MDS/Rgram/master/tests/testthat/test_images/flipping/sample.png")

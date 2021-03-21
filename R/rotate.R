@@ -18,7 +18,7 @@ rotate <- function(image, degree){
   #Reading image file as matrix
   input <- load.image(image)
 
-  img_rotate <- imrotate(input, 60)
+  img_rotate <- imager::imrotate(input, 60)
 
   img_rotate
 }
