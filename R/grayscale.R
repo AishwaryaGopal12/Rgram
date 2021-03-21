@@ -9,14 +9,9 @@ library(testit)
 #' @export
 #'
 
-
 grayscale <- function(image){
 
-#   # exception handling
-#   assert("Please provide a string as the path for the input image file.", is.character(image))
-#
-#   #Reading image file as matrix
-  input <- load.image(image)
+  input <- imager::load.image(image)
 
   input_height <- dim(input)[1]
   input_width <- dim(input)[2]
@@ -39,10 +34,8 @@ grayscale <- function(image){
       }
     }
   }
-#
+
    as.cimg(image_grey)
-#
-  # gray_scale = imager::grayscale(image)
-  # gray_scale
+
 }
 

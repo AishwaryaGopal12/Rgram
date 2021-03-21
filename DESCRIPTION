@@ -1,4 +1,4 @@
-Package: Rgram
+Package: rgram
 Title: Rgram Aims to Make the Image Processing Task Easy and Intuitive
 Version: 0.0.0.9000
 Authors@R: 
@@ -46,9 +46,8 @@ License: MIT + file LICENSE
 URL: https://github.com/UBC-MDS/Rgram
 BugReports: https://github.com/UBC-MDS/Rgram/issues
 Suggests: 
-    covr
-    tiff
-Suggests: 
+    covr,
+    tiff,
     knitr,
     rmarkdown
 VignetteBuilder: knitr
